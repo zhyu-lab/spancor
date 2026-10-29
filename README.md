@@ -1,5 +1,5 @@
-# sage-mox
-Local-Global Fusion and Alignment-Complementary Cross-Omics Integration for Spatial Domain Identification
+# SpaNCOR
+Adaptive Neighborhood Fusion and Correlation-Regulated Dual-Branch Learning for Spatial Multi-Omics Domain Identification
 
 ## Requirement
 - torch==2.3.0
@@ -17,10 +17,10 @@ Local-Global Fusion and Alignment-Complementary Cross-Omics Integration for Spat
 Clone the repository and create a conda environment:
 
 ```bash
-git clone https://github.com/zhyu-lab/sage-mox.git
-cd sage-mox
-conda create -n sagemox python=3.9 -y
-conda activate sagemox
+git clone https://github.com/zhyu-lab/spancor.git
+cd spancor
+conda create -n spancor python=3.9 -y
+conda activate spancor
 ```
 
 Install the required packages:
@@ -46,7 +46,7 @@ data/
 
 ## Usage
 
-Run SAGE-MoX from the root directory:
+Run SpaNCOR from the root directory:
 
 ```bash
 python main.py --name Human_Lymph_Node_A1 --device cuda:0
@@ -61,4 +61,4 @@ python main.py
 
 ## Output and Evaluation
 
-SAGE-MoX constructs a consensus affinity matrix and applies spectral clustering to obtain spatial domains. ARI, NMI, AMI, V-measure, and homogeneity are automatically calculated and printed in the terminal.
+SpaNCOR constructs a consensus affinity matrix and applies spectral clustering to obtain spatial domains. ARI, NMI, AMI, V-measure, and homogeneity are automatically calculated and printed in the terminal.
