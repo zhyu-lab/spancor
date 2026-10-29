@@ -1,6 +1,7 @@
 ﻿import argparse
 import torch
 
+
 parser = argparse.ArgumentParser(description='SAGEMoX', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 # setting
 parser.add_argument('--name', type=str, default="Human_Lymph_Node_A1")
