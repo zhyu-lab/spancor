@@ -33,7 +33,6 @@ def preprocess(adata_omics1, adata_omics2, datatype='10x'):
         adata_omics2 = clr_normalize_each_cell(adata_omics2)
         sc.pp.scale(adata_omics2)
         adata_omics2.obsm['feat'] = pca(adata_omics2, n_comps=adata_omics2.n_vars)
-
     elif datatype == 'RNA-ATAC':
         # RNA
         sc.pp.filter_genes(adata_omics1, min_cells=10)
