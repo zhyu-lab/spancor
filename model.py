@@ -324,3 +324,4 @@ class SAGEMoX(nn.Module):
         if denominator == 0:
             raise ValueError("The sum of n_omics1 and n_omics2 should not be zero.")
         return n_omics2 / denominator, n_omics1 / denominator
+
