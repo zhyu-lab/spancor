@@ -51,3 +51,4 @@ def eval(label, pred):
     v_measure = v_measure_score(label, pred)
     homo = homogeneity_score(label, pred)
     return ari, nmi, ami, v_measure, homo
+    
