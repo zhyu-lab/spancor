@@ -17,7 +17,6 @@ SUPPORTED_DATASETS = [
 def load_data(return_spatial: bool = False):
     """
     Load and preprocess data from supported datasets.
-
     Constructs feature graphs and spatial graphs, refines the spatial graphs,
     and returns PCA features, normalized graphs, and labels.
     """
